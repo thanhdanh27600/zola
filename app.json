@@ -1,0 +1,12 @@
+{
+    "plugins": [
+        "expo-router"
+    ],
+    "expo": {
+        "scheme": "Zola",
+        "web": {
+            "bundler": "metro"
+        },
+        "userInterfaceStyle": "dark"
+    }
+}
