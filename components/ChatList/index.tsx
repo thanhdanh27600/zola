@@ -1,8 +1,8 @@
+
 import { useRouter } from "expo-router";
 import React from "react";
 import { Image, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
-import { COLORS } from "../../constants";
 import { ChatPreviewData } from "../../types/chat";
 import { Icon } from "../common/Icon";
 import { P } from "../common/P";
@@ -103,7 +103,7 @@ const ChatPreview = (props: Props) => {
 										<Icon
 											name={statusName(s)}
 											size={14}
-											style={{color: COLORS.grey[300]}}
+											style={styles.statusIcon}
 										/>
 									</View>
 								);

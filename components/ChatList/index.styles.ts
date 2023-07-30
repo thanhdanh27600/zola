@@ -1,3 +1,4 @@
+
 import { StyleSheet } from "react-native";
 import { COLORS, SIZE, SPACING } from "../../constants";
 import { BadgeType, ChatStatus } from "../../types/chat";
@@ -25,8 +26,8 @@ export const styles = StyleSheet.create({
 	containerNameAndText: {
 		flexShrink: 1,
 	},
-	sender: { fontSize: 16 },
-	messageContainer:{paddingTop: 2},
+	sender: {fontSize: 16},
+	messageContainer: {paddingTop: 2},
 	message: {fontSize: 14, color: COLORS.grey[500]},
 	messageBold: {fontSize: 14, color: COLORS.grey[900]},
 	notifyContainer: {
@@ -36,7 +37,7 @@ export const styles = StyleSheet.create({
 		alignItems: "flex-end",
 		justifyContent: "space-between",
 	},
-	notifyDetail:{display: 'flex', flexDirection: 'row', gap: 4},
+	notifyDetail: {display: "flex", flexDirection: "row", gap: 4},
 	time: {
 		fontSize: 12,
 		display: "flex",
@@ -65,6 +66,7 @@ export const styles = StyleSheet.create({
 		height: 52,
 		borderRadius: SIZE.xxl,
 	},
+	statusIcon: {color: COLORS.grey[300]},
 });
 
 export const badgeStyle = (type?: BadgeType) =>

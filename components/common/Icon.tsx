@@ -1,9 +1,8 @@
+import { createIconSetFromFontello } from "@expo/vector-icons";
 import { Icon as I, IconProps } from "@expo/vector-icons/build/createIconSet";
 import { Image, ImageProps } from "react-native";
-import { SIZE } from "../../constants";
-
-import { createIconSetFromFontello } from "@expo/vector-icons";
 import config from "../../assets/fonts/zola.json";
+import { SIZE } from "../../constants";
 
 export const IconImage = (props: ImageProps) => {
 	return (

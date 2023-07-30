@@ -1,9 +1,9 @@
-import { LinearGradient } from "expo-linear-gradient";
 import { Stack, useRouter } from "expo-router";
 import { SafeAreaView, ScrollView, View } from "react-native";
 import { ChatList } from "../components/ChatList";
-import { HeaderLeft } from "../components/Header/HeaderLeft";
-import { HeaderRight } from "../components/Header/HeaderRight";
+import { HeaderLeft } from "../components/HeaderList/HeaderLeft";
+import { HeaderRight } from "../components/HeaderList/HeaderRight";
+import { HeaderGradient } from "../components/common/HeaderGradient";
 import { COLORS } from "../constants";
 
 const App = () => {
@@ -12,14 +12,7 @@ const App = () => {
 		<SafeAreaView style={{flex: 1, backgroundColor: COLORS.layerBackground}}>
 			<Stack.Screen
 				options={{
-					headerBackground: () => (
-						<LinearGradient
-							colors={[COLORS.headerBold, COLORS.headerLight]}
-							style={{flex: 1}}
-							start={{x: 0, y: 0}}
-							end={{x: 1, y: 0}}
-						/>
-					),
+					headerBackground: () => HeaderGradient,
 					headerTitle: "",
                     headerLeft: HeaderLeft,
                     headerRight: HeaderRight

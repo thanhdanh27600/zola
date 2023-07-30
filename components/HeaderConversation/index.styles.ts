@@ -1,6 +1,6 @@
+
 import { StyleSheet } from "react-native";
 import { COLORS, SIZE, SPACING, isIos } from "../../constants";
-
 export const styles = StyleSheet.create({
 	headerLeft: {
 		flex: 1,
