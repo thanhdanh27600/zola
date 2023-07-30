@@ -1,11 +1,10 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { Stack, useRouter } from "expo-router";
 import { SafeAreaView, ScrollView, View } from "react-native";
-import { ChatConversation } from "../components/ChatConversation";
 import { ChatList } from "../components/ChatList";
 import { HeaderLeft } from "../components/Header/HeaderLeft";
 import { HeaderRight } from "../components/Header/HeaderRight";
-import { COLORS, SPACING } from "../constants";
+import { COLORS } from "../constants";
 
 const App = () => {
 	const router = useRouter();
@@ -26,11 +25,9 @@ const App = () => {
                     headerRight: HeaderRight
 				}}
 			/>
-			<LinearGradient colors={[COLORS.headerBold, COLORS.headerLight]} />
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<View style={{flex: 1, padding: SPACING.sm}}>
+				<View style={{flex: 1}}>
 					<ChatList />
-					<ChatConversation />
 				</View>
 			</ScrollView>
 		</SafeAreaView>

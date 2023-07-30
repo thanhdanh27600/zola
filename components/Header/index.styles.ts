@@ -6,8 +6,7 @@ export const styles = StyleSheet.create({
 		flex: 1,
 		flexDirection: "row",
 		alignItems: "center",
-		maxWidth: SIZE.xxl,
-		gap: SPACING.sm,
+		gap: 20,
 	},
 	headerRight: {
 		display: "flex",
@@ -17,8 +16,9 @@ export const styles = StyleSheet.create({
 		gap: SPACING.sm,
 	},
 	searchInput: {
-		color: COLORS.textWhite,
+		color: COLORS.white,
 		fontSize: SIZE.sm,
+		maxWidth: "60%",
 	},
 });
-export const placeholderTextColor = isIos ? COLORS.textWhite : COLORS.grey[300];
+export const placeholderTextColor = isIos ? COLORS.white : COLORS.grey[300];
